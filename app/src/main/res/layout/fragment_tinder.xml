@@ -6,14 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".ui.cardstack.TinderFragment">
 
-
     <com.yuyakaido.android.cardstackview.CardStackView
         android:id="@+id/cardStackTheme"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-152dp"></com.yuyakaido.android.cardstackview.CardStackView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="200dp"
+        android:clickable="true"
+        android:src="@drawable/skip_red_24dp"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="auto"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></com.yuyakaido.android.cardstackview.CardStackView>
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonRewind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:src="@drawable/rewind_blue_24dp"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButtonNo"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButtonYes"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButtonNo"
+        app:layout_constraintTop_toTopOf="@+id/floatingActionButtonNo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:src="@drawable/like_green_24dp"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButtonNo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/floatingActionButtonNo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
