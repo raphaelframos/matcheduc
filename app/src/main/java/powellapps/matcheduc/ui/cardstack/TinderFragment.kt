@@ -30,8 +30,7 @@ class TinderFragment : Fragment(), CardStackListener {
         binding.cardStackTheme.layoutManager = manager
         binding.cardStackTheme.adapter = CardStackThemeAdapter(ThemeRepository.create())
         binding.floatingActionButtonRewind.setOnClickListener {
-       //     adapter.themes = ThemeRepository.create()
-         //   adapter.notifyDataSetChanged()
+
             binding.cardStackTheme.rewind()
 
         }
@@ -42,7 +41,7 @@ class TinderFragment : Fragment(), CardStackListener {
 
 
     private fun initializeLayoutManager() {
-        manager.setVisibleCount(3)
+        manager.setVisibleCount(1)
         manager.setStackFrom(StackFrom.None)
         manager.setSwipeableMethod(SwipeableMethod.AutomaticAndManual)
         manager.setDirections(Direction.HORIZONTAL)

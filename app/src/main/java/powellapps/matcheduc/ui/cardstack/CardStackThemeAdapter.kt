@@ -17,12 +17,13 @@ class CardStackThemeAdapter(var themes: List<Theme>) : RecyclerView.Adapter<Card
         return themes.size
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(themes.get(position))
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(themes[position])
 
     inner class ViewHolder(val binding: AdapterCardstackthemeBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(theme: Theme) {
             with(binding){
                 this.textViewName.text = theme.name
+                this.textViewDescription.text = theme.description
             }
 
         }

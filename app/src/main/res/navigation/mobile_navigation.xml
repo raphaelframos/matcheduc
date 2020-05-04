@@ -24,6 +24,6 @@
     <fragment
         android:id="@+id/navigation_tinder"
         android:name="powellapps.matcheduc.ui.cardstack.TinderFragment"
-        android:label="fragment_tinder"
+        android:label="Tema"
         tools:layout="@layout/fragment_tinder" />
 </navigation>
