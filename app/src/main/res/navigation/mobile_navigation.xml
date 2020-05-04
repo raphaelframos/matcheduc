@@ -12,19 +12,18 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="powellapps.matcheduc.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/navigation_notifications"
         android:name="powellapps.matcheduc.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
+        android:id="@+id/navigation_profile"
+        android:name="powellapps.matcheduc.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
         android:id="@+id/navigation_tinder"
         android:name="powellapps.matcheduc.ui.cardstack.TinderFragment"
-        android:label="@string/match"
+        android:label="fragment_tinder"
         tools:layout="@layout/fragment_tinder" />
 </navigation>

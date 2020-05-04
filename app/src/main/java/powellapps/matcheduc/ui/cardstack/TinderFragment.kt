@@ -53,12 +53,18 @@ class TinderFragment : Fragment(), CardStackListener {
     }
 
     override fun onCardDragging(direction: Direction?, ratio: Float) {
-        Log.d("CardStackView", "onCardCanceled: ${manager.topPosition}")
+        Log.d("CardStackView", "onCardCanceled: ")
 
     }
 
     override fun onCardSwiped(direction: Direction?) {
-        Toast.makeText(context, "Teste " + direction!!.ordinal, Toast.LENGTH_LONG).show()
+        direction?.let {
+            if(it.ordinal == 1){
+
+            }
+        }
+
+        Toast.makeText(context, "Teste " + direction!!.ordinal + "posicao ${manager.topPosition}", Toast.LENGTH_LONG).show()
     }
 
     override fun onCardCanceled() {
