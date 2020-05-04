@@ -28,7 +28,7 @@ class ProfileFragment : Fragment() {
             transformations(CircleCropTransformation())
         }
         binding.textViewName.setText("Girafales")
-        binding.textViewSchool.setText("Fafita")
+        binding.textViewSchool.setText("Instituto Federal Fluminense")
         var u1 = Unit("Portugues")
         var u2 = Unit("Redação")
         var u3 = Unit("Literatura")
