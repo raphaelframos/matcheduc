@@ -10,4 +10,5 @@
     <string name="perfil">Perfil</string>
     <string name="salvar">Salvar</string>
     <string name="nome_da_disciplina">Nome da disciplina</string>
+    <string name="nome_do_tema">Nome do tema</string>
 </resources>

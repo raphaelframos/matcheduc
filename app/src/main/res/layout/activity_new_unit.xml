@@ -20,7 +20,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/buttonSalvarDisciplina"
+        android:id="@+id/buttonSaveUnit"
         style="@style/ButtonPrimary"
         android:text="@string/salvar" />
 </LinearLayout>

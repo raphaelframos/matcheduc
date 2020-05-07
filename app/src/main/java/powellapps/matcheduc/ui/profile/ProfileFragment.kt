@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import coil.api.load
 import coil.transform.CircleCropTransformation
 import kotlinx.android.synthetic.main.fragment_profile.*
+import powellapps.matcheduc.NewThemeActivity
 import powellapps.matcheduc.NewUnitActivity
 import powellapps.matcheduc.R
 import powellapps.matcheduc.databinding.FragmentProfileBinding
@@ -41,7 +42,10 @@ class ProfileFragment : Fragment() {
         units.add(u3)
         var adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, units) }
         binding.listViewUnits.adapter = adapter
-
+        binding.listViewUnits.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(context, NewThemeActivity::class.java)
+            startActivity(intent)
+        }
         binding.floatingActionButtonNew.setOnClickListener {
             startActivity(Intent(activity, NewUnitActivity::class.java))
         }
