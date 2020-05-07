@@ -1,5 +1,6 @@
 package powellapps.matcheduc.ui.profile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import coil.api.load
 import coil.transform.CircleCropTransformation
+import kotlinx.android.synthetic.main.fragment_profile.*
+import powellapps.matcheduc.NewUnitActivity
 import powellapps.matcheduc.R
 import powellapps.matcheduc.databinding.FragmentProfileBinding
 import powellapps.matcheduc.model.Unit
@@ -29,7 +32,7 @@ class ProfileFragment : Fragment() {
         }
         binding.textViewName.setText("Girafales")
         binding.textViewSchool.setText("Instituto Federal Fluminense")
-        var u1 = Unit("Portugues")
+        var u1 = Unit("Língua Portuguesa")
         var u2 = Unit("Redação")
         var u3 = Unit("Literatura")
         var units = arrayListOf<Unit>()
@@ -38,6 +41,10 @@ class ProfileFragment : Fragment() {
         units.add(u3)
         var adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, units) }
         binding.listViewUnits.adapter = adapter
+
+        binding.floatingActionButtonNew.setOnClickListener {
+            startActivity(Intent(activity, NewUnitActivity::class.java))
+        }
         return binding.root
     }
 
