@@ -11,4 +11,12 @@
     <string name="salvar">Salvar</string>
     <string name="nome_da_disciplina">Nome da disciplina</string>
     <string name="nome_do_tema">Nome do tema</string>
+    <string name="entrar">Entrar</string>
+    <string name="sou_professor">Sou professor</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="ol_bem_vindo_de_volta">Olá! Bem vindo de volta...</string>
+    <string name="matcheduc">Matcheduc</string>
+    <string name="campo_branco">Campo em branco!</string>
+    <string name="novo_usuario">Novo usuário</string>
 </resources>
