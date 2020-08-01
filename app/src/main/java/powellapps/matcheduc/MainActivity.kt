@@ -1,5 +1,6 @@
 package powellapps.matcheduc
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -20,5 +21,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_tinder, R.id.navigation_profile))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        startActivity(Intent(this, StartActivity::class.java))
     }
 }
