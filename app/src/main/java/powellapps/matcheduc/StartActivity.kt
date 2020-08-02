@@ -27,7 +27,7 @@ class StartActivity : AppCompatActivity() {
             if(isValid(email, password)){
                 finish()
             }else{
-                startActivity(Intent(applicationContext, NewUserActivity::class.java))
+
             }
 
         }
@@ -39,6 +39,13 @@ class StartActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.item_new -> {
+                startActivity(Intent(applicationContext, NewUserActivity::class.java))
+                return true
+            }
+
+        }
         return super.onOptionsItemSelected(item)
     }
 
