@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.yuyakaido.android.cardstackview.*
-
-import powellapps.matcheduc.R
 import powellapps.matcheduc.databinding.FragmentTinderBinding
 import powellapps.matcheduc.repository.ThemeRepository
 

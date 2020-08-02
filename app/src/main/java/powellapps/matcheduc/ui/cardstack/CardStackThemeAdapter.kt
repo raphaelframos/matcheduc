@@ -3,6 +3,7 @@ package powellapps.matcheduc.ui.cardstack
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import powellapps.matcheduc.databinding.AdapterCardstackthemeBinding
 import powellapps.matcheduc.model.Theme
 
@@ -23,7 +24,8 @@ class CardStackThemeAdapter(var themes: List<Theme>) : RecyclerView.Adapter<Card
         fun bind(theme: Theme) {
             with(binding){
                 this.textViewName.text = theme.name
-                this.textViewDescription.text = theme.description
+                this.recyclerDescription.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+                this.recyclerDescription.adapter = DescriptionAdapter(theme.descriptions)
             }
 
         }
