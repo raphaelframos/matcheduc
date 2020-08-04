@@ -11,6 +11,11 @@
         android:icon="@drawable/ic_action_profile"
         android:title="@string/perfil" />
 
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_action_report"
+        android:title="@string/relatorio" />
+
   />
 
 </menu>

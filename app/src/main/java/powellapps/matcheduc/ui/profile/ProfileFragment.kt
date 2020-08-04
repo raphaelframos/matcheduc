@@ -33,9 +33,9 @@ class ProfileFragment : Fragment() {
         }
         binding.textViewName.setText("Girafales")
         binding.textViewSchool.setText("Instituto Federal Fluminense")
-        var u1 = Unit("Língua Portuguesa")
-        var u2 = Unit("Redação")
-        var u3 = Unit("Literatura")
+        var u1 = Unit("Língua Portuguesa", "Turma A", 10)
+        var u2 = Unit("Redação", "Turma A", 20)
+        var u3 = Unit("Literatura", "Turma B", 10)
         var units = arrayListOf<Unit>()
         units.add(u1)
         units.add(u2)

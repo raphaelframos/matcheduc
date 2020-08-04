@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="powellapps.matcheduc.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_report"
+        android:name="powellapps.matcheduc.ui.report.ReportFragment"
+        android:label="@string/relatorio"
+        tools:layout="@layout/fragment_report" />
     <fragment
         android:id="@+id/navigation_profile"
         android:name="powellapps.matcheduc.ui.profile.ProfileFragment"

@@ -19,4 +19,6 @@
     <string name="matcheduc">Matcheduc</string>
     <string name="campo_branco">Campo em branco!</string>
     <string name="novo_usuario">Novo usuário</string>
+    <string name="relatorio">Relatório</string>
+    <string name="alunos">alunos</string>
 </resources>
