@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import powellapps.matcheduc.databinding.AdapterStudentsBinding
 import powellapps.matcheduc.model.Student
+import powellapps.matcheduc.utils.ImageUtils
 
 class AdapterStudents(val students : List<Student>) : RecyclerView.Adapter<AdapterStudents.StudentsViewHolder>() {
 
@@ -12,6 +13,7 @@ class AdapterStudents(val students : List<Student>) : RecyclerView.Adapter<Adapt
         fun bind(student: Student) {
             binding.textViewName.text = student.name
             binding.textViewThemes.text = student.themes
+            ImageUtils.showImageCircle(binding.imageViewPhoto, student.photo)
         }
 
     }

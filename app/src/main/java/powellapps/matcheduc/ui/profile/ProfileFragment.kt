@@ -15,6 +15,7 @@ import powellapps.matcheduc.NewUnitActivity
 import powellapps.matcheduc.R
 import powellapps.matcheduc.databinding.FragmentProfileBinding
 import powellapps.matcheduc.model.Unit
+import powellapps.matcheduc.utils.ImageUtils
 
 /**
  * A simple [Fragment] subclass.
@@ -26,11 +27,8 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var binding = FragmentProfileBinding.inflate(inflater, container, false)
-        binding.imageView.load("https://imagens.brasil.elpais.com/resizer/y5S0I2pUA_jXOFgLtLmudfLybbY=/1500x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/WTH33T43JQ4HCKAS6BHGGBYREQ.jpg") {
-            crossfade(true)
-            placeholder(R.drawable.ic_home_black_24dp)
-            transformations(CircleCropTransformation())
-        }
+        ImageUtils.showImageCircle(binding.imageView, "https://imagens.brasil.elpais.com/resizer/y5S0I2pUA_jXOFgLtLmudfLybbY=/1500x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/WTH33T43JQ4HCKAS6BHGGBYREQ.jpg")
+        
         binding.textViewName.setText("Girafales")
         binding.textViewSchool.setText("Instituto Federal Fluminense")
         var u1 = Unit("Língua Portuguesa", "Turma A", 10)
