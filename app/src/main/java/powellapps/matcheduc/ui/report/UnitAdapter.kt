@@ -30,7 +30,7 @@ class UnitAdapter(val units : List<powellapps.matcheduc.model.Unit>) : RecyclerV
     class UnitViewHolder(val binding : AdapterUnitBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bind(unit: powellapps.matcheduc.model.Unit) {
-            binding.textViewAmountStudents.text = unit.amountStudents.toString() + " " + context.getString(
+            binding.textViewAmountStudents.text = unit.amountStudents.toString() + " " + binding.root.context.getString(
                             R.string.alunos)
             binding.textViewClass.text = unit.classroom
             binding.textViewUnitName.text = unit.name
