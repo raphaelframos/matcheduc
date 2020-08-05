@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import powellapps.matcheduc.R
-import powellapps.matcheduc.StudentsActivity
+import powellapps.matcheduc.ui.students.StudentsActivity
 import powellapps.matcheduc.databinding.AdapterUnitBinding
 
 class UnitAdapter(val units : List<powellapps.matcheduc.model.Unit>) : RecyclerView.Adapter<UnitAdapter.UnitViewHolder>() {
