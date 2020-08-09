@@ -5,11 +5,6 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/navigation_tinder">
 
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="powellapps.matcheduc.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_report"
@@ -24,6 +19,12 @@
     <fragment
         android:id="@+id/navigation_tinder"
         android:name="powellapps.matcheduc.ui.cardstack.TinderFragment"
-        android:label="Tema"
+        android:label="@string/tema"
         tools:layout="@layout/fragment_tinder" />
+
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="powellapps.matcheduc.ui.information.InformationFragment"
+        android:label="@string/informacao"
+        tools:layout="@layout/fragment_information" />
 </navigation>

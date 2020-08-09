@@ -21,4 +21,7 @@
     <string name="novo_usuario">Novo usuário</string>
     <string name="relatorio">Relatório</string>
     <string name="alunos">alunos</string>
+    <string name="avaliacao">Avaliação</string>
+    <string name="tema">Tema</string>
+    <string name="informacao">Informação</string>
 </resources>
