@@ -14,6 +14,7 @@ import powellapps.matcheduc.NewThemeActivity
 import powellapps.matcheduc.NewUnitActivity
 import powellapps.matcheduc.R
 import powellapps.matcheduc.databinding.FragmentProfileBinding
+import powellapps.matcheduc.model.Teacher
 import powellapps.matcheduc.model.Unit
 import powellapps.matcheduc.utils.ImageUtils
 
@@ -27,18 +28,26 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var binding = FragmentProfileBinding.inflate(inflater, container, false)
-        ImageUtils.showImageCircle(binding.imageView, "https://imagens.brasil.elpais.com/resizer/y5S0I2pUA_jXOFgLtLmudfLybbY=/1500x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/WTH33T43JQ4HCKAS6BHGGBYREQ.jpg")
 
-        binding.textViewName.setText("Girafales")
-        binding.textViewSchool.setText("Instituto Federal Fluminense")
+        val user = Teacher()
+        user.name = "Carla Gonçalves"
+        user.school = "Instituto Federal Fluminense"
+        user.photo = "https://scontent.fcaw1-1.fna.fbcdn.net/v/t1.0-9/61465306_2217457061708677_8160794546549030912_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=b__I665RMD0AX9WK5W8&_nc_ht=scontent.fcaw1-1.fna&oh=269baf3aea56b883bf224bf16bad7ece&oe=5F55252F"
+        binding.textViewName.setText(user.name)
+        binding.textViewSchool.text = user.school
+        ImageUtils.showImageCircle(binding.imageView,
+            user.photo)
+        
         var u1 = Unit("Língua Portuguesa", "Turma A", 10)
         var u2 = Unit("Redação", "Turma A", 20)
         var u3 = Unit("Literatura", "Turma B", 10)
         var units = arrayListOf<Unit>()
+
         units.add(u1)
         units.add(u2)
         units.add(u3)
-        var adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, units) }
+        user.units = units
+        var adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, user.units) }
         binding.listViewUnits.adapter = adapter
         binding.listViewUnits.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(context, NewThemeActivity::class.java)

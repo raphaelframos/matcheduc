@@ -22,8 +22,8 @@ class ReportFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentReportBinding.inflate(LayoutInflater.from(context), container, false)
-        var u1 = Unit("Português", "Turma A", 10)
-        var u2 = Unit("Português", "Turma B", 20)
+        var u1 = Unit("Língua Portuguesa", "Turma A", 10)
+        var u2 = Unit("Redação", "Turma B", 20)
         binding.recyclerReports.layoutManager = LinearLayoutManager(context)
         binding.recyclerReports.adapter = UnitAdapter(Arrays.asList(u1, u2))
         binding.recyclerReports.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))

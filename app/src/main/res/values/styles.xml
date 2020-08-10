@@ -14,4 +14,16 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Label1" parent="MatchWrap">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
 </resources>

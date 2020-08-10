@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.information.ThemeInformationFragment">
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".ui.information.TestInformationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label1"
+                android:text="@string/abordagem_tematica"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A abordagem temática, como indicado acima, foi escolhida como a metodologia adotada para a personalização do ensino no MatchEduc. Essa abordagem  tem como objetivo trazer a realidade de experiências externas do aluno para dentro da sala de aula e integrar experiências internas para que o ensino seja de fato significativo ao objetivo de produzir conhecimento por parte de cada aluno. Proposta por Paulo Freire e George Snyders, esse tipo de abordagem requer um planejamento didático-pedagógico pelo conhecimento científico e também pelo senso comum. A elaboração do currículo deve se basear em problemas e projetos a partir de temas, denominado como tema gerador, em que a motivação pelo pensamento crítico e reflexivo, auxilie a criar aulas significativas. O objetivo é discutir o cotidiano do aluno a partir de seus conhecimentos prévios e interesses, para assim criar saberes complementares (FREIRE, 1987).
+A abordagem temática, desse modo, pode contribuir na superação pedagógica dos obstáculos de atenção dos alunos frente aos conhecimentos científicos. Geralmente, o aluno pensa não precisar aprender certos conhecimentos apresentados na escola por não entender como os conceitos de teoria científica se encaixam na vida real, assim, o jovem tende a negá-los. Esses obstáculos são categorizados por Fernandes (2018, p. 166) como “distanciamento epistemológico”, como conceito que dificulta a aprendizagem dos alunos, na medida em que valoriza o desconhecido e prescinde de experimentação. Dessa forma, adotar a interpretação de experiências vividas pelos alunos como ponto de partida para a escolha dos temas e a sua projeção dentro da sala de aula, é fundamental. A escolha dos temas deve ser intencionalmente direcionada ao aprendizado não tradicional, denominado por Freire (1987) como educação bancária, em que o aluno é apenas receptor de conhecimento. Ao contrário, a prática deve buscar, na dialogicidade, a troca de informações entre aluno e professor, bem como de referências teóricas, sociais, culturais e de vida, visando alcançar situações mais favoráveis aos alunos em seu desenvolvimento cognitivo.
+Para que seja efetiva, essa dialogicidade na escolha da abordagem temática que será adotada como ponto de partida para a discussão da ementa precisa ser sistematizada, e, portanto, exige sequências didáticas bem delimitadas para sua aplicação. Delizoicov, Angotti e Pernambuco (2011) apresentam um exemplo de sequência com base nos estudos de Freire: a Pedagogia dos Três Momentos, composta das seguintes fases: Problematização Inicial; Organização do conhecimento; Aplicação do conhecimento.
+Santos e Husche (2012) dividiram esses três momentos em cinco etapas:
+A 1º etapa se refere à Problematização Inicial e é o primeiro contato do professor com os alunos. De maneira informal, o professor, através de diálogo, colhe informações pessoais dos alunos e da comunidade, como suas aspirações, sonhos e projetos de vida. Na 2º etapa, ainda na Problematização Inicial, o professor faz a análise dos posicionamentos anteriores e codifica essas situações. Na 3º etapa, o professor expõe temas e faz relação com as contradições e problemas encontrados na etapa anterior. Com isso, o professor, junto com os alunos, pode escolher temas pertinentes aos desafios, curiosidades, obstáculos e dúvidas dos alunos. Na 4º etapa, as autoras sugerem a redução dos temas de acordo com a área de conhecimento específico do professor e, assim, trabalha os temas na 5º etapa, que é voltada à aplicação dessa sequência frente a um planejamento do conteúdo científico.
+Essa sequência, então, poderia auxiliar o professor, através de um tutorial do aplicativo, a trabalhar o currículo ao longo do período letivo em função da abordagem temática. A vantagem do tutorial ao explicitar essa metodologia seria apoiar o professor em uma capacitação ainda que breve para o uso do aplicativo.
+"></TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

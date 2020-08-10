@@ -20,7 +20,6 @@ class InformationFragment : Fragment() {
     private lateinit var binding: FragmentInformationBinding
     private lateinit var viewPager: ViewPager2
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
