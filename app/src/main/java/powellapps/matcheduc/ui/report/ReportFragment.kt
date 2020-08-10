@@ -22,8 +22,10 @@ class ReportFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentReportBinding.inflate(LayoutInflater.from(context), container, false)
-        var u1 = Unit("Língua Portuguesa", "Turma A", 10)
-        var u2 = Unit("Redação", "Turma B", 20)
+        val photo = "https://scontent.fcaw1-1.fna.fbcdn.net/v/t1.0-9/61465306_2217457061708677_8160794546549030912_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=b__I665RMD0AX9WK5W8&_nc_ht=scontent.fcaw1-1.fna&oh=269baf3aea56b883bf224bf16bad7ece&oe=5F55252F"
+
+        var u1 = Unit("Língua Portuguesa", "Turma A", 10, photo)
+        var u2 = Unit("Redação", "Turma B", 20, photo)
         binding.recyclerReports.layoutManager = LinearLayoutManager(context)
         binding.recyclerReports.adapter = UnitAdapter(Arrays.asList(u1, u2))
         binding.recyclerReports.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))

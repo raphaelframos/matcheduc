@@ -37,10 +37,10 @@ class ProfileFragment : Fragment() {
         binding.textViewSchool.text = user.school
         ImageUtils.showImageCircle(binding.imageView,
             user.photo)
-        
-        var u1 = Unit("Língua Portuguesa", "Turma A", 10)
-        var u2 = Unit("Redação", "Turma A", 20)
-        var u3 = Unit("Literatura", "Turma B", 10)
+
+        var u1 = Unit("Língua Portuguesa", "Turma A", 10, "")
+        var u2 = Unit("Redação", "Turma A", 20, "")
+        var u3 = Unit("Literatura", "Turma B", 10, "")
         var units = arrayListOf<Unit>()
 
         units.add(u1)

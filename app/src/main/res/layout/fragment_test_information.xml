@@ -58,6 +58,24 @@
                 android:text="@string/texto_seminario"></TextView>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label1"
+                android:text="TRABALHO EM GRUPO"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Definição: Atividades de natureza diversa (escrita, oral, gráfica, corporal etc.) realizadas coletivamente. Função: Desenvolver a troca, o espírito colaborativo e a socialização.
+                Vantagens: A interação é um importante facilitador da aprendizagem e a heterogeneidade da classe pode ser usada como um elemento a favor do ensino. Atenção: Esse procedimento não o desobriga de buscar informações para orientar as equipes. Nem deve substituir os momentos individuais de aprendizagem.
+                Planejamento: Proponha atividades ligadas ao conteúdo, forneça fontes de pesquisa, ensine os procedimentos e indique materiais para alcançar os objetivos. Análise: Observe se todos participaram e colaboraram e atribua valores às diversas etapas do processo e ao produto final.
+                Como utilizar as informações: Observe como a garotada trabalha – para poder organizar agrupamentos mais produtivos da perspectiva da aprendizagem dos conteúdos."></TextView>
+        </LinearLayout>
+
     </LinearLayout>
 
 

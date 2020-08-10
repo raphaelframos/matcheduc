@@ -12,7 +12,7 @@ class ImageUtils {
         fun showImageCircle(imageView : ImageView, url: String){
             imageView.load(url) {
                 crossfade(true)
-                placeholder(R.drawable.ic_home_black_24dp)
+                placeholder(R.drawable.ic_action_profile)
                 transformations(CircleCropTransformation())
             }
         }

@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import powellapps.matcheduc.R
 import powellapps.matcheduc.ui.students.StudentsActivity
 import powellapps.matcheduc.databinding.AdapterUnitBinding
+import powellapps.matcheduc.utils.ImageUtils
 
 class UnitAdapter(val units : List<powellapps.matcheduc.model.Unit>) : RecyclerView.Adapter<UnitAdapter.UnitViewHolder>() {
 
@@ -34,6 +35,7 @@ class UnitAdapter(val units : List<powellapps.matcheduc.model.Unit>) : RecyclerV
                             R.string.alunos)
             binding.textViewClass.text = unit.classroom
             binding.textViewUnitName.text = unit.name
+            ImageUtils.showImageCircle(binding.imageViewPhoto, unit.teacherPhoto)
         }
 
     }
