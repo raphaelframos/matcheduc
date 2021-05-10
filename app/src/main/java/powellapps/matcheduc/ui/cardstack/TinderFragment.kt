@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.yuyakaido.android.cardstackview.*
 import org.koin.android.ext.android.bind
 import powellapps.matcheduc.databinding.FragmentTinderBinding
@@ -19,7 +20,7 @@ import powellapps.matcheduc.repository.ThemeRepository
 class TinderFragment : Fragment(), CardStackListener {
 
     val manager by lazy { CardStackLayoutManager(context, this) }
-    val adapter by lazy { CardStackThemeAdapter(ThemeRepository.create()) }
+    val adapter by lazy { CardStackThemeAdapter(ThemeRepository.createExams()) }
     lateinit var binding : FragmentTinderBinding
 
     override fun onCreateView(
@@ -55,7 +56,13 @@ class TinderFragment : Fragment(), CardStackListener {
             manager.setSwipeAnimationSetting(setting)
             binding.cardStackTheme.swipe()
         }
+
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        (activity as AppCompatActivity).supportActionBar?.title = "Avaliações"
     }
 
 

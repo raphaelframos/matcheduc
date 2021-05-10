@@ -27,29 +27,30 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         val user = Teacher()
-        user.name = "Carla Gonçalves"
+        user.name = "Cirilo"
         user.school = "Instituto Federal Fluminense"
-        user.photo = "https://scontent.fcaw1-1.fna.fbcdn.net/v/t1.0-9/61465306_2217457061708677_8160794546549030912_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=b__I665RMD0AX9WK5W8&_nc_ht=scontent.fcaw1-1.fna&oh=269baf3aea56b883bf224bf16bad7ece&oe=5F55252F"
+        user.photo = "https://contigo.uol.com.br/images/large/2019/12/09/ele-cresceu-cirilo-de-carrossel-surge-chiquerrimo-no-aniversario-de-larissa-manoela-1201798.jpg"
+     //   user.photo = "https://scontent.fcaw1-1.fna.fbcdn.net/v/t1.0-9/61465306_2217457061708677_8160794546549030912_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=b__I665RMD0AX9WK5W8&_nc_ht=scontent.fcaw1-1.fna&oh=269baf3aea56b883bf224bf16bad7ece&oe=5F55252F"
         binding.textViewName.setText(user.name)
         binding.textViewSchool.text = user.school
         ImageUtils.showImageCircle(binding.imageView,
             user.photo)
 
-        var u1 = Unit("Língua Portuguesa", "Turma A", 10, "")
-        var u2 = Unit("Redação", "Turma A", 20, "")
-        var u3 = Unit("Literatura", "Turma B", 10, "")
-        var units = arrayListOf<Unit>()
+        val u1 = Unit("Língua Portuguesa", "Turma A", 10, "")
+        val u2 = Unit("Redação", "Turma A", 20, "")
+        val u3 = Unit("Literatura", "Turma B", 10, "")
+        val units = arrayListOf<Unit>()
 
         units.add(u1)
         units.add(u2)
         units.add(u3)
         user.units = units
-        var adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, user.units) }
+        val adapter = context?.let { ArrayAdapter(it, android.R.layout.simple_list_item_1, user.units) }
         binding.listViewUnits.adapter = adapter
-        binding.listViewUnits.setOnItemClickListener { parent, view, position, id ->
+        binding.listViewUnits.setOnItemClickListener { _, _, _, _ ->
             val intent = Intent(context, NewThemeActivity::class.java)
             startActivity(intent)
         }
